@@ -1,0 +1,82 @@
+<body class="background">
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>📚 BOOKNEST DASHBOARD</h1>
+    </header>
+
+    <div class="dashboard-cards">
+      <div class="card card-total-books">
+        <h3>Total Books</h3>
+        <p>{{ totalBooks }}</p>
+      </div>
+      <div class="card card-books-borrowed">
+        <h3>Books Borrowed</h3>
+        <p>{{ booksBorrowed }}</p>
+      </div>
+      <div class="card card-books-available">
+        <h3>Books Available</h3>
+        <p>{{ booksAvailable }}</p>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="cards">
+        <button
+          class="red-btn"
+          type="submit"
+          (click)="onAddBooksClick()"
+          routerLink="app-add-books-page"
+        >
+          ADD BOOKS
+        </button>
+
+        <button
+          class="blue-btn"
+          type="submit"
+          (click)="onManageBooksClick()"
+          routerLink="app-manage-books-page"
+        >
+          MANAGE BOOKS
+        </button>
+      </div>
+      <div class="cards">
+        <button
+          class="red-btn"
+          type="submit"
+          (click)="onAddMembersClick()"
+          routerLink="app-add-members-page"
+        >
+          ADD MEMBERS
+        </button>
+
+        <button
+          class="blue-btn"
+          type="submit"
+          (click)="onManageMembersClick()"
+          routerLink="app-manage-members-page"
+        >
+          MANAGE MEMBERS
+        </button>
+      </div>
+      <div class="cards">
+        <button
+          class="red-btn"
+          type="submit"
+          (click)="onAddBorrowersClick()"
+          routerLink="app-add-borrower-page"
+        >
+          ADD BORROWERS
+        </button>
+
+        <button
+          class="blue-btn"
+          type="submit"
+          (click)="onManageBorrowersClick()"
+          routerLink="app-manage-borrower-page"
+        >
+          MANAGE BORROWERS
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
